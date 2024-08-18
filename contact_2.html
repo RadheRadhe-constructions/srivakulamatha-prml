@@ -394,7 +394,14 @@
 		<script type="text/javascript" src="js/jquery.qtip.min.js"></script>
 		<script type="text/javascript" src="js/jquery.blockUI.min.js"></script>
 		<script type="text/javascript" src="js/jquery.imagesloaded-packed.js"></script>
-		<script type="text/javascript" async src="//maps.google.com/maps/api/js?key=AIzaSyAt0sZDX5KMOGKdIE3IqTj0xX6wrHWv5d0"></script>
+		<script src="env.js"></script>
+		<script>
+			const apiKey = window.GOOGLE_MAPS_API_KEY;
+			const script = document.createElement('script');
+			script.src = `https://maps.googleapis.com/maps/api/js?key=${apiKey}`;
+			document.head.appendChild(script);
+		  </script>
+		
 		<script type="text/javascript" src="js/main.js"></script>
 		<script type="text/javascript" src="js/odometer.min.js"></script>
 		<gmp-map center="15.002927780151367,78.99012756347656" zoom="14" map-id="DEMO_MAP_ID">
