@@ -3545,3 +3545,25 @@ body.lock-position
     align-items: center; /* This aligns the image and text vertically */
     margin: 0; /* Remove any default margin */
 }
+.floating-button {
+	position: fixed;
+	bottom: 50%;
+	right: 20px;
+	background-color: yellowgreen;
+	color: white;
+	border: none;
+	border-radius: 50%;
+	width: 60px;
+	height: 60px;
+	font-size: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	z-index: 1000;
+	text-decoration: none; 
+}
+.floating-button:hover {
+	background-color:rgb(130, 150, 255);
+}
